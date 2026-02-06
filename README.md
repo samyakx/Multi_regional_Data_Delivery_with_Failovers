@@ -23,7 +23,7 @@ Usage
 
 Deploy Infrastructure: Run the Terraform commands above.
 Upload Data: Use AWS CLI or console to upload files to the primary S3 bucket (e.g., aws s3 cp file.txt s3://my-primary-data-bucket-unique/).
-Access Data: Via the Route 53 alias (e.g., https://data.example.com/file.txt).
+Access Data: Via the Route 53 alias .
 Test Failover: Simulate failure by making the primary health check fail (e.g., remove the root object or use AWS console to test).
 SQL Example: The example.sql is a sample script for tracking deliveries. Upload to S3 and query via Athena if needed, or use with an RDS database.
 
